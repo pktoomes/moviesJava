@@ -12,7 +12,7 @@ import java.util.List;
 public class MovieController {
 
     static final String MOVIE_URL = "https://api.themoviedb.org/3/movie/now_playing";
-    static final String API_KEY = 
+    static final String API_KEY = h
 
 
 
