@@ -6,11 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Movie {
-    private String title;
+     String title;
     @JsonProperty(value="poster_path")
-    private String posterPath;
-    private String overview;
-    private double popularity;
+    String posterPath;
+    String overview;
+    double popularity;
 
     public Movie() {
     }

@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Now Playing</title>
 </head>
 <body>
-
+<h1 style="text-align: center">NOW PLAYING</h1>
+<br/>
+<h3 style="text-align:center">
+    <a href="/">HOME</a>
+    <a href="/medium-popular-long-name">MEDIUM POPULAR LONG NAME</a>
+</h3>
+<br/>
+<div th:each = "movie: ${movies}">
+    <br/>
+    <img width="150px" src="'http://image.tmdb.org/t/p/original' + ${movie.posterPath}"/>
+    <span th:text = "${movie.titles}"></span>
+</div>
 </body>
 </html>
